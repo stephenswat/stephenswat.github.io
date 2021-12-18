@@ -5,7 +5,7 @@ import           Hakyll
 
 main :: IO ()
 main = hakyll $ do
-    match "images/*" $ do
+    match "images/**" $ do
         route   idRoute
         compile copyFileCompiler
 
@@ -13,8 +13,12 @@ main = hakyll $ do
         route   idRoute
         compile compressCssCompiler
 
-    match (fromList ["pages/about.rst", "pages/contact.markdown"]) $ do
-        route   $ (gsubRoute "pages/" (const "")) `mappend` setExtension "html"
+    match "resources/*" $ do
+        route   idRoute
+        compile copyFileCompiler
+
+    match (fromList ["pages/contact.md", "pages/work.md", "pages/miscellaneous.md"]) $ do
+        route   $ (setExtension "html") `composeRoutes` (gsubRoute "pages/" (const ""))
         compile $ pandocCompiler
             >>= loadAndApplyTemplate "templates/default.html" defaultContext
             >>= relativizeUrls
@@ -26,29 +30,28 @@ main = hakyll $ do
             >>= loadAndApplyTemplate "templates/default.html" postCtx
             >>= relativizeUrls
 
-    create ["archive.html"] $ do
+    create ["blog.html"] $ do
         route idRoute
         compile $ do
             posts <- recentFirst =<< loadAll "posts/*"
             let archiveCtx =
                     listField "posts" postCtx (return posts) `mappend`
-                    constField "title" "Archives"            `mappend`
+                    constField "title" "Blog"                `mappend`
                     defaultContext
 
             makeItem ""
-                >>= loadAndApplyTemplate "templates/archive.html" archiveCtx
+                >>= loadAndApplyTemplate "templates/blog.html" archiveCtx
                 >>= loadAndApplyTemplate "templates/default.html" archiveCtx
                 >>= relativizeUrls
 
-    match "pages/index.html" $ do
-        route $ gsubRoute "pages/" (const "")
+    match "pages/index.md" $ do
+        route $ (setExtension "html") `composeRoutes` (gsubRoute "pages/" (const ""))
         compile $ do
             posts <- recentFirst =<< loadAll "posts/*"
             let indexCtx =
                     listField "posts" postCtx (return posts) `mappend`
                     defaultContext
-
-            getResourceBody
+            pandocCompiler
                 >>= applyAsTemplate indexCtx
                 >>= loadAndApplyTemplate "templates/default.html" indexCtx
                 >>= relativizeUrls

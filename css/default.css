@@ -1,22 +1,37 @@
-html {
-  font-size: 62.5%;
+body {
+  font-size: 1.2rem;
+  color: #000;
+  font-family: 'Bitter', serif;
+  overflow-y: scroll;
+  line-height: 150%;
 }
 
-body {
-  font-size: 1.6rem;
-  color: #000;
+p {
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+li p {
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+h1 {
+  line-height: 150%;
 }
 
 header {
-  border-bottom: 0.2rem solid #000;
+  border-bottom: 0.4rem solid rgb(100, 0, 161);
 }
 
 nav {
   text-align: right;
+  height: 100%;
 }
 
 nav a {
-  font-size: 1.8rem;
+  height: 100%;
+  font-size: 1.2rem;
   font-weight: bold;
   color: black;
   text-decoration: none;
@@ -24,23 +39,14 @@ nav a {
 }
 
 footer {
-  margin-top: 3rem;
+  font-size: 60%;
+  margin-top: 2.6rem;
   padding: 1.2rem 0;
-  border-top: 0.2rem solid #000;
-  font-size: 1.2rem;
+  border-top: 0.4rem solid rgb(100, 0, 161);
   color: #555;
 }
 
-h1 {
-  font-size: 2.4rem;
-}
-
-h2 {
-  font-size: 2rem;
-}
-
 article .header {
-  font-size: 1.4rem;
   font-style: italic;
   color: #555;
 }
@@ -51,46 +57,29 @@ article .header {
   text-decoration: none;
 }
 
-@media (max-width: 319px) {
-  body {
-    width: 90%;
-    margin: 0;
-    padding: 0 5%;
-  }
-  header {
-    margin: 4.2rem 0;
-  }
-  nav {
-    margin: 0 auto 3rem;
-    text-align: center;
-  }
-  footer {
-    text-align: center;
-  }
-  .logo {
-    text-align: center;
-    margin: 1rem auto 3rem;
-  }
-  .logo a {
-    font-size: 2.4rem;
-  }
-  nav a {
-    display: block;
-    line-height: 1.6;
-  }
+img.inline-left {
+  margin-right: 1rem;
+  margin-bottom: 1rem;
+  float: left;
 }
 
-@media (min-width: 320px) {
+img.inline-right {
+  margin-left: 1rem;
+  margin-bottom: 1rem;
+  float: right;
+}
+
+@media (min-width: 0px) {
   body {
     width: 90%;
     margin: 0;
     padding: 0 5%;
   }
   header {
-    margin: 4.2rem 0;
+    margin: 3.2rem 0 2rem 0;
   }
   nav {
-    margin: 0 auto 3rem;
+    margin: 0 auto 2rem;
     text-align: center;
   }
   footer {
@@ -109,14 +98,14 @@ article .header {
   }
 }
 
-@media (min-width: 640px) {
+@media (min-width: 740px) {
   body {
-    width: 60rem;
+    width: 42rem;
     margin: 0 auto;
     padding: 0;
   }
   header {
-    margin: 0 0 3rem;
+    margin: 0 0 2rem;
     padding: 1.2rem 0;
   }
   nav {
