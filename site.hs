@@ -1,7 +1,20 @@
 {-# LANGUAGE OverloadedStrings #-}
 
+import qualified Data.Set
 import           Data.Monoid (mappend)
 import           Hakyll
+import           Text.Pandoc.Options
+
+pandocMathCompiler =
+    let mathExtensions = [Ext_tex_math_dollars, Ext_tex_math_double_backslash,
+                          Ext_latex_macros]
+        defaultExtensions = writerExtensions defaultHakyllWriterOptions
+        newExtensions = foldr enableExtension defaultExtensions mathExtensions
+        writerOptions = defaultHakyllWriterOptions {
+                          writerExtensions = newExtensions,
+                          writerHTMLMathMethod = MathML
+                        }
+    in pandocCompilerWith defaultHakyllReaderOptions writerOptions
 
 main :: IO ()
 main = hakyll $ do
@@ -25,7 +38,7 @@ main = hakyll $ do
 
     match "posts/*" $ do
         route $ setExtension "html"
-        compile $ pandocCompiler
+        compile $ pandocMathCompiler
             >>= loadAndApplyTemplate "templates/post.html"    postCtx
             >>= loadAndApplyTemplate "templates/default.html" postCtx
             >>= relativizeUrls
