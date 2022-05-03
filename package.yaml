@@ -1,0 +1,17 @@
+name:                v25-blog
+version:             1.0.0.0
+github:              "stephenswat/blog"
+author:              "Stephen Nicholas Swatman"
+maintainer:          "stephen@v25.nl"
+
+dependencies:
+  - base >= 4.7 && < 5
+  - hakyll
+
+executables:
+  generate:
+    main: site.hs
+    ghc-options:
+      - -Wall
+      - -Wcompat
+      - -O3
