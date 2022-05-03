@@ -16,6 +16,8 @@ pandocMathCompiler =
                         }
     in pandocCompilerWith defaultHakyllReaderOptions writerOptions
 
+import Text.Pandoc.Highlighting (Style, kate, styleToCss)
+
 main :: IO ()
 main = hakyll $ do
     match "images/**" $ do
@@ -57,6 +59,11 @@ main = hakyll $ do
                 >>= loadAndApplyTemplate "templates/default.html" archiveCtx
                 >>= relativizeUrls
 
+    create ["css/syntax.css"] $ do
+        route idRoute
+        compile $ do
+            makeItem $ styleToCss pandocCodeStyle
+
     match "pages/index.md" $ do
         route $ (setExtension "html") `composeRoutes` (gsubRoute "pages/" (const ""))
         compile $ do
@@ -70,6 +77,9 @@ main = hakyll $ do
                 >>= relativizeUrls
 
     match "templates/*" $ compile templateBodyCompiler
+
+pandocCodeStyle :: Style
+pandocCodeStyle = kate
 
 postCtx :: Context String
 postCtx =

@@ -76,6 +76,10 @@ main::after {
   clear: both;
 }
 
+.sourceCode {
+  font-size: 1rem;
+}
+
 @media (min-width: 0px) {
   body {
     width: 90%;
