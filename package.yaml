@@ -11,7 +11,7 @@ dependencies:
 
 executables:
   generate:
-    main: site.hs
+    main: Site.hs
     ghc-options:
       - -Wall
       - -Wcompat

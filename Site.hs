@@ -1,10 +1,10 @@
 {-# LANGUAGE OverloadedStrings #-}
 
-import qualified Data.Set
-import           Data.Monoid (mappend)
-import           Hakyll
-import           Text.Pandoc.Options
+import Hakyll
+import Text.Pandoc.Options
+import Text.Pandoc.Highlighting (Style, kate, styleToCss)
 
+pandocMathCompiler :: Compiler (Item String)
 pandocMathCompiler =
     let mathExtensions = [Ext_tex_math_dollars, Ext_tex_math_double_backslash,
                           Ext_latex_macros]
@@ -16,7 +16,6 @@ pandocMathCompiler =
                         }
     in pandocCompilerWith defaultHakyllReaderOptions writerOptions
 
-import Text.Pandoc.Highlighting (Style, kate, styleToCss)
 
 main :: IO ()
 main = hakyll $ do
