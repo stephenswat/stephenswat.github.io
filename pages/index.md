@@ -21,8 +21,8 @@ Please take a look around my website. Like any good academic, I have a blog
 that I never update, outdated contact details, and probably a few dead links
 here and there.
 
-## Recent posts
+<!-- ## Recent posts
 
 $partial("templates/post-list.html")$
 
-...the rest of my blog posts can be found in the [archives](/blog.html).
+...the rest of my blog posts can be found in the [archives](/blog.html). -->

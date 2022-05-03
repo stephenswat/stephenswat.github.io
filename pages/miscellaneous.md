@@ -29,8 +29,5 @@ and a 50mm f/1.8 lens which is by far my favourite.
 
 <img src="/images/photos/thistle.jpg" class="inline-left" style="float: left; width: 40%;" />
 
-My pictures are compositionally and technically simple, but that's okay.
-
-<!-- ## Hello
-
-Yo -->
+My pictures are compositionally and technically simple, but that's okay. I also
+really like birds!

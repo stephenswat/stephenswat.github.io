@@ -2,7 +2,6 @@
 title: Introduction to Satisfiability Modulo Theories for Advent of Code 2021
 date: 2021-12-26
 author: Stephen Nicholas Swatman
-published: true
 ---
 
 The twenty-forth challenge of this year's _Advent of Code_ was both an
