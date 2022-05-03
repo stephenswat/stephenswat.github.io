@@ -69,6 +69,13 @@ img.inline-right {
   float: right;
 }
 
+main::after {
+  content: " ";
+  display: block;
+  height: 0;
+  clear: both;
+}
+
 @media (min-width: 0px) {
   body {
     width: 90%;
