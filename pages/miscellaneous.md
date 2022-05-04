@@ -16,7 +16,7 @@ to people -- mostly early career scientists -- whose work I find interesting:
 * [Paul Gessinger](https://paulgessinger.com/): colleague and co-author,
   brilliant physicist and photographer
 * [Uma Zalakain](https://umazalakain.info/): consistently interesting content
-  on programming language theory and type theory, among other topics
+  on programming languages and type theory, among other topics
 
 ## Photography
 
