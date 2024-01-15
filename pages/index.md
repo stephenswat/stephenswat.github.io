@@ -7,12 +7,12 @@ title: Stephen Nicholas Swatman
 Hello there! My name is Stephen, and I am currently a PhD student in computer
 science at the University of Amsterdam in collaboration with the European
 Organization for Nuclear Research (CERN). Under the supervision of Ana-Lucia
-Varbanescu and Attila Krasznahorkay, I work on applying heterogeneous computing
--- GPGPUs in particular -- to the reconstruction of particles in high-energy
-collisions.
+Varbanescu, Andy Pimentel, Andreas Salzburger, and Attila Krasznahorkay, I work
+on applying heterogeneous computing -- GPGPUs in particular -- to the
+reconstruction of particles in high-energy collisions.
 
-Outside of work I like to cycle and swim, play tabletop games of all kinds,
-take photographs, cook, and commit myself to amateur botany. I am also very
+Outside of work I like to cycle, play tabletop games of all kinds, take
+photographs, cook, and commit myself to amateur botany. I am also very
 interested in category theory, functional programming, type theory, and
 computational trinitarianism, although my knowledge of these subjects is not
 nearly as well developed as I would like it to be.

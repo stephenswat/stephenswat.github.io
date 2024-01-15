@@ -24,8 +24,9 @@ to people -- mostly early career scientists -- whose work I find interesting:
 
 I will never claim to be a competent photographer, but it is something that I
 am interested in, and something that I enjoy learning more about. I own a Nikon
-D3500 camera, with a 18--55mm f/3.5--5.6 kit lens, a 70-300mm f/4.5--6.3 lens,
-and a 50mm f/1.8 lens which is by far my favourite.
+D3500 camera, with a NIKKOR 18--55mm f/3.5--5.6 kit lens, a NIKKOR 70-300mm
+f/4.5--6.3 lens, a NIKKOR 50mm f/1.8 lens, a Sigma 24mm f/1.4 lens, and an Irix
+15mm f/2.4 lens. I also own some vintage Soviet lenses.
 
 <img src="/images/photos/thistle.jpg" class="inline-left" style="float: left; width: 40%;" />
 
