@@ -2,7 +2,7 @@
 title: Contact
 ---
 
-My work-related email address is `stephen.nicholas.swatman@cern.ch`. My
+My work-related e-mail address is `stephen.nicholas.swatman@cern.ch`. My
 personal e-mail address is `stephen@v25.nl`. In addition, you may find me on
 [GitHub](https://github.com/stephenswat), and
 [LinkedIn](https://www.linkedin.com/in/stephen-nicholas-swatman-913a088a/). I
