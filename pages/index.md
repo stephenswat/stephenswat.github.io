@@ -4,12 +4,13 @@ title: Stephen Nicholas Swatman
 
 <img src="/images/mugshot.jpg" class="inline-right" style="float: right; width: 40%;" />
 
-Hello there! My name is Stephen, and I am currently a PhD student in computer
-science at the University of Amsterdam in collaboration with the European
-Organization for Nuclear Research (CERN). Under the supervision of Ana-Lucia
-Varbanescu, Andy Pimentel, Andreas Salzburger, and Attila Krasznahorkay, I work
-on applying heterogeneous computing -- GPGPUs in particular -- to the
-reconstruction of particles in high-energy collisions.
+Hello there! My name is Stephen, and I am currently a scientific software
+developer at the European Organization for Nuclear Research (CERN). I work on
+applying heterogeneous computing -- GPGPUs in particular -- to the
+reconstruction of particles in high-energy collisions. I apply various
+practical and theoretical performance engineering techniques and model in order
+to prepare the field of high-energy physics for the data challenges of the
+future.
 
 Outside of work I like to cycle, play tabletop games of all kinds, take
 photographs, cook, and commit myself to amateur botany. I am also very
